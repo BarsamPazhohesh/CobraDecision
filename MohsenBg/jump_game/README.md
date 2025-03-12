@@ -35,4 +35,4 @@ The main idea is:
 - Also, in the appropriate context, we check whether `max_reach` reaches or passes the ending index 🎯, under such circumstance returning `true` ✅.
 
 You can check the Rust code here:  
-[rust code](./src/lib.rs) 📄💻
+#### [Rust Code](./src/lib.rs) 📄💻
