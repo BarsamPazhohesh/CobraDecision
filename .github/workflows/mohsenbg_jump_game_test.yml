@@ -1,0 +1,31 @@
+name: Jump Game Build and Test
+
+on:
+  push:
+    branches: ['MohsenBg']
+  pull_request:
+    branches: ['MohsenBg']
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Rust
+        uses: actions/setup-rust@v1
+        with:
+          rust-version: stable
+
+      - name: Navigate to jump_game directory
+        run: cd MohsenBg/jump_game
+
+      - name: Build
+        run: cargo build --verbose
+
+      - name: Run Jump Game Tests
+        run: cargo test jump_game --verbose -- --test-threads=1
