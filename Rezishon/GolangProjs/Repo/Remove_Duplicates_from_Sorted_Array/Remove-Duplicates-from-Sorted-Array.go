@@ -37,4 +37,11 @@ func closeReturnString(returnString *string, seenValuesLen, inputArrayLen int) {
 	*returnString = (*returnString)[:len(*returnString)-1] + "]"
 
 }
+
+func emptyHandler(returnString *string, seenValuesLen, inputArrayLen int) {
+
+	for i := seenValuesLen; i < inputArrayLen; i++ {
+		*returnString += "_,"
+
+	}
 }
