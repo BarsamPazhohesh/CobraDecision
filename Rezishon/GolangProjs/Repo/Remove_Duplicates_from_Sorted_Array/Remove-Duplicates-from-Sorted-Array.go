@@ -16,4 +16,8 @@ func Remove_Duplicates_from_Sorted_Array(inputArray []int) {
 func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
 
 	var returnString string
+
+	openResultString(&returnString, len(*seenValues))
+func openResultString(returnString *string, len int) {
+}
 }
