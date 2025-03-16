@@ -1,0 +1,39 @@
+name: Remove Duplicates from Sorted Array Build and Test
+
+on:
+  push:
+    branches: ['MohsenBg']
+  pull_request:
+    branches: ['MohsenBg']
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Rust
+        run: |
+          rustup update
+          rustup component add clippy
+          rustup install nightly
+
+      - name: Toolchain info
+        run: |
+          cargo --version --verbose
+          rustc --version
+          cargo clippy --version
+
+      - name: Build
+        run: |
+          cd MohsenBg/remove_duplicates_from_sorted_array &&
+          cargo build --verbose
+
+      - name: Remove Duplicates from Sorted Array Tests
+        run: |
+          cd MohsenBg/remove_duplicates_from_sorted_array &&
+          cargo test --verbose -- --test-threads=1
