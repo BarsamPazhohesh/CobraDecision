@@ -24,6 +24,10 @@ func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
 	}
 
 	closeReturnString(&returnString, len(*seenValues), inputArrayLen)
+
+	fmt.Println(returnString)
+}
+
 func openResultString(returnString *string, len int) {
 
 	*returnString = fmt.Sprint(len)
