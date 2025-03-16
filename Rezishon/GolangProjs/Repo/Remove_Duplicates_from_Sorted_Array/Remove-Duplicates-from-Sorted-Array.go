@@ -49,9 +49,6 @@ func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
 	fmt.Println(returnString)
 }
 
-func openResultString(returnString *string, len int) {
-
-	*returnString = fmt.Sprint(len)
 // Add the start of return string
 //
 // * Parameters:
@@ -62,6 +59,9 @@ func openResultString(returnString *string, len int) {
 // * Returns:
 //
 //	No return
+func openResultString(returnString *string, seenValuesLen int) {
+
+	*returnString = fmt.Sprint(seenValuesLen)
 	*returnString += ", nums = ["
 
 }
