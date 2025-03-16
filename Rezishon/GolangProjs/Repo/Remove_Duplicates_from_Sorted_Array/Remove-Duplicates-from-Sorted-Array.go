@@ -18,6 +18,10 @@ func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
 	var returnString string
 
 	openResultString(&returnString, len(*seenValues))
+
+	for key := range *seenValues {
+		returnString += fmt.Sprint(key) + ","
+	}
 func openResultString(returnString *string, len int) {
 
 	*returnString = fmt.Sprint(len)
