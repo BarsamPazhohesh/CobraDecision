@@ -22,6 +22,8 @@ func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
 	for key := range *seenValues {
 		returnString += fmt.Sprint(key) + ","
 	}
+
+	closeReturnString(&returnString, len(*seenValues), inputArrayLen)
 func openResultString(returnString *string, len int) {
 
 	*returnString = fmt.Sprint(len)
