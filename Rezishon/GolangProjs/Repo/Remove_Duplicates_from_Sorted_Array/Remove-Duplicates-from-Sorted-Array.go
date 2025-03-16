@@ -9,5 +9,9 @@ func Remove_Duplicates_from_Sorted_Array(inputArray []int) {
 	for i := 0; i < len(inputArray); i++ {
 		seenValues[inputArray[i]] += 1
 	}
+
+	StringBuilder(&seenValues, len(inputArray))
 }
 
+func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
+}
