@@ -1,11 +1,10 @@
 package main
 
 import (
-	repo "GolangProjs/Repo"
-	"fmt"
+	repo "GolangProjs/Repo/Remove_Duplicates_from_Sorted_Array"
 )
 
 func main() {
-	sampleInput := []int{2, 3, 1, 1, 4}
-	fmt.Println(repo.CanJump(sampleInput))
+	sampleInput := []int{1,1,2}
+	repo.Remove_Duplicates_from_Sorted_Array(sampleInput)
 }
