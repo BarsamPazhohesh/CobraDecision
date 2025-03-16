@@ -15,3 +15,7 @@ func CanJump(input []int) bool {
 	}
 	return false
 }
+func Cal(i, indexValue *int, value int) {
+	*i += *indexValue
+	*indexValue = value
+}
