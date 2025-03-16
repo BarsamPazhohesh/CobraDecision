@@ -13,4 +13,5 @@ func CanJump(input []int) bool {
 			return false
 		}
 	}
+	return false
 }
