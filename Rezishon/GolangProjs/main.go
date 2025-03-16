@@ -1,29 +1,11 @@
 package main
 
 import (
+	repo "GolangProjs/Repo"
 	"fmt"
 )
 
 func main() {
 	sampleInput := []int{2, 3, 1, 1, 4}
-	fmt.Println(canJump(sampleInput))
-}
-func canJump(input []int) bool {
-	inputLen := len(input)
-	i := 0
-	indexValue := input[i]
-	for i <= inputLen {
-		if i >= inputLen-1 {
-			return true
-		}
-		if cal(&i, &indexValue, input[i]); indexValue == 0 {
-			return false
-		}
-	}
-	return false
-}
-
-func cal(i, indexValue *int, value int) {
-	*i += *indexValue
-	*indexValue = value
+	fmt.Println(repo.CanJump(sampleInput))
 }
