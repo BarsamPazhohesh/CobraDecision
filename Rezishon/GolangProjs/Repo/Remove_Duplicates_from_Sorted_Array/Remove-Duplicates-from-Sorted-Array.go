@@ -30,4 +30,11 @@ func openResultString(returnString *string, len int) {
 	*returnString += ", nums = ["
 
 }
+
+func closeReturnString(returnString *string, seenValuesLen, inputArrayLen int) {
+
+	emptyHandler(returnString, seenValuesLen, inputArrayLen)
+	*returnString = (*returnString)[:len(*returnString)-1] + "]"
+
+}
 }
