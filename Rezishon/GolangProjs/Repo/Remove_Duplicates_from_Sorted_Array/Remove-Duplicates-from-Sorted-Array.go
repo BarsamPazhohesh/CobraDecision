@@ -19,5 +19,9 @@ func StringBuilder(seenValues *map[int]int, inputArrayLen int) {
 
 	openResultString(&returnString, len(*seenValues))
 func openResultString(returnString *string, len int) {
+
+	*returnString = fmt.Sprint(len)
+	*returnString += ", nums = ["
+
 }
 }
