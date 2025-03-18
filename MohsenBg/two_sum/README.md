@@ -62,3 +62,4 @@ The important observation here is that rather than looking for the complement (`
 - **Space Complexity**: **O(n)** — Worst-case scenario, the hash map will have all the numbers of the array.
 
 This optimization reduces the time complexity from **O(n²)** in the brute-force solution to **O(n)**, making it much more efficient. 💨
+#### [Zig Code](./src/main.zig) 📄💻
