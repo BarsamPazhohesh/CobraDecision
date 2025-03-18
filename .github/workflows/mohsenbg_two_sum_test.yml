@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: |
           cd MohsenBg/two_sum &&
-          zig build-exe two_sum.zig -O ReleaseSmall
+          zig build-exe ./src/main.zig -O ReleaseSmall
 
       - name: Run Two Sum Tests
         run: |
