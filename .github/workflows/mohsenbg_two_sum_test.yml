@@ -1,0 +1,36 @@
+name: Two Sum Build and Test
+
+on:
+  push:
+    branches: ['MohsenBg']
+  pull_request:
+    branches: ['MohsenBg']
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Zig
+        run: |
+          sudo apt-get update
+          sudo snap install zig --classic --beta
+
+      - name: Toolchain info
+        run: |
+          zig version
+
+      - name: Build
+        run: |
+          cd MohsenBg/two_sum &&
+          zig build-exe ./src/main.zig -O ReleaseSmall
+
+      - name: Run Two Sum Tests
+        run: |
+          cd MohsenBg/two_sum &&
+          zig test ./src/main.zig 2>&1 | cat
