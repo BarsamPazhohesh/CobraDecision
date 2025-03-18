@@ -15,3 +15,4 @@ Each participant has their own branch and folder to solve questions and share th
 
 1. **Question 1**: [Jump Game](./Questions/JumpGame.md)
 2. **Question 2**: [Remove Duplicates from Sorted Array](./Questions/RemoveDuplicatesFromSortedArray.md)
+3. **Question 3**: [Two Sum](./Questions/TwoSum.md)
