@@ -11,3 +11,8 @@ function twoSum(nums: number[], target: number): number[] {
   }
   return [];
 }
+interface ValuesToValidate {
+  i: number;
+  j: number;
+  target: number;
+}
