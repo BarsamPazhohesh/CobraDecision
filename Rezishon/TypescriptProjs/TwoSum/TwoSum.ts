@@ -16,3 +16,6 @@ interface ValuesToValidate {
   j: number;
   target: number;
 }
+function Is_i_j_eq_target(inputValues: ValuesToValidate): boolean {
+  return inputValues.i + inputValues.j === inputValues.target;
+}
