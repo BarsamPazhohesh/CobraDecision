@@ -1,3 +1,5 @@
+//#region Main function
+
 /**
  * The main function
  * (Start point)
@@ -9,6 +11,11 @@ function main() {
 }
 
 main();
+
+//#endregion
+
+//#region Question logic
+
 /**
  * @summary This method will check sum of what two numbers will be the target
  * @param nums Number of arrays we will iterate over it
@@ -28,6 +35,11 @@ function twoSum(nums: number[], target: number): number[] {
   }
   return [];
 }
+
+//#endregion
+
+//#region Interfaces
+
 /**
  * @param i
  * @param j
@@ -38,6 +50,11 @@ interface ValuesToValidate {
   j: number;
   target: number;
 }
+
+//#endregion
+
+//#region Repository
+
 /**
  * This method will check the question condition
  * @param inputValues An interface which contains i, j, & target that are all number type
@@ -46,3 +63,5 @@ interface ValuesToValidate {
 function Is_i_j_eq_target(inputValues: ValuesToValidate): boolean {
   return inputValues.i + inputValues.j === inputValues.target;
 }
+
+//#endregion
