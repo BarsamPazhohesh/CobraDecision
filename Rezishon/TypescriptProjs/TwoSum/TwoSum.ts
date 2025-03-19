@@ -1,3 +1,7 @@
+/**
+ * The main function
+ * (Start point)
+ */
 function main() {
   console.log(twoSum([2, 7, 11, 15], 9));
   console.log(twoSum([3, 2, 4], 6));
@@ -5,6 +9,12 @@ function main() {
 }
 
 main();
+/**
+ * @summary This method will check sum of what two numbers will be the target
+ * @param nums Number of arrays we will iterate over it
+ * @param target The target of sum of two numbers
+ * @returns Array of numbers which are index of true numbers
+ */
 function twoSum(nums: number[], target: number): number[] {
   let result: number[] = [];
   for (let i = 0; i < nums.length - 1; i++) {
@@ -18,11 +28,21 @@ function twoSum(nums: number[], target: number): number[] {
   }
   return [];
 }
+/**
+ * @param i
+ * @param j
+ * @param target
+ */
 interface ValuesToValidate {
   i: number;
   j: number;
   target: number;
 }
+/**
+ * This method will check the question condition
+ * @param inputValues An interface which contains i, j, & target that are all number type
+ * @returns boolean
+ */
 function Is_i_j_eq_target(inputValues: ValuesToValidate): boolean {
   return inputValues.i + inputValues.j === inputValues.target;
 }
