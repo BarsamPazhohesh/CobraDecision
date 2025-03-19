@@ -18,6 +18,5 @@ def canJump(nums):
         print(f"maxReach is: {maxReach}") # debug
     return True
 
-    
 
 print(f"can we jump: {canJump(nums)}") # result
