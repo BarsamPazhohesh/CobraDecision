@@ -1,0 +1,20 @@
+# Ignore compiled binary files
+jump_game
+*.exe
+*.out
+*.bin
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore debugging and core dump files
+*.dSYM/
+*.core
+core
+
+# Ignore temporary files and editor backups
+*.swp
+*.swo
+*.bak
+*~
