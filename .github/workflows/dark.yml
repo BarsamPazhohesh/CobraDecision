@@ -6,7 +6,7 @@ name: user-statistician
 
 on:
   schedule:
-    - cron: '05 22 * * *'
+    - cron: '0 3 * * *'
   push:
     branches: [ main, master ]
     paths: [ '.github/workflows/dark.yml' ]
@@ -18,10 +18,13 @@ jobs:
       
     steps:
     - uses: actions/checkout@v4
+      with:
+        repository: BarsamPazhohesh/CobraDecision
+        path: user-statistician
 
     - name: Generate the user stats image
-      uses: rezishon/user-statistician@v1
-      with:
-        colors: dark
+      run: |
+        cd user-statistician
+        python generate_stats.py --colors dark
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
