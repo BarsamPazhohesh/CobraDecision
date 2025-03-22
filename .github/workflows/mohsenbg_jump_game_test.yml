@@ -30,10 +30,10 @@ jobs:
 
       - name: Build
         run: |
-          cd MohsenBg/jump_game &&
+          cd MohsenBg/jump_game/rust &&
           cargo build --verbose
 
       - name: Run Jump Game Tests
         run: |
-          cd MohsenBg/jump_game &&
+          cd MohsenBg/jump_game/rust &&
           cargo test --verbose -- --test-threads=1
