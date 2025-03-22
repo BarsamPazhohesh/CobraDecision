@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Generate the user stats image
-      uses: BarsamPazhohesh/user-statistician@v1
+      uses: rezishon/user-statistician@v1
       with:
         colors: dark
       env:
