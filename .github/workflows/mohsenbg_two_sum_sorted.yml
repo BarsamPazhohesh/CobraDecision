@@ -33,7 +33,7 @@ jobs:
           cd MohsenBg/two_sum_sorted/rust &&
           cargo build --verbose
 
-      - name: Run Jump Game Tests
+      - name: Run Two Sum Sorted Tests
         run: |
           cd MohsenBg/two_sum_sorted/rust &&
           cargo test --verbose -- --test-threads=1
