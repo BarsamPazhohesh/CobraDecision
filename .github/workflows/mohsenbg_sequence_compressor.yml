@@ -30,10 +30,10 @@ jobs:
 
       - name: Build
         run: |
-          cd MohsenBg/sequence_compressor/rust &&
+          cd MohsenBg/sequence_compressor &&
           cargo build --verbose
 
       - name: Run Sequence Compressor Tests
         run: |
-          cd MohsenBg/sequence_compressor/rust &&
+          cd MohsenBg/sequence_compressor &&
           cargo test --verbose -- --test-threads=1
