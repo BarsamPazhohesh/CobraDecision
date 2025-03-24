@@ -5,3 +5,5 @@ This is a collection of the questions I've solved. You can check how I solve the
 * [jump_game](./jump_game/README.md) 🎮
 * [remove_duplicates_from_sorted_array](./remove_duplicates_from_sorted_array/README.md) 🔄
 * [two_sum](./two_sum/README.md) 🧮
+* [two_sum_sorted](./two_sum_sorted/README.md) 
+* [sequence_compressor](./sequence_compressor/README.md) 
