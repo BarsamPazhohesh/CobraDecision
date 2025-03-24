@@ -1,4 +1,4 @@
-﻿class Solution
+﻿class Solve_1
 {
     public List<List<int>> ThreeSum(int[] nums)
     {
@@ -6,16 +6,13 @@
         int end = nums.Length;
         for (int i = 0; i < end; i++)
         {
-            for (int j = 0; j <= i; j++)
+            for (int j = i + 1; j < end; j++)
             {
-                for (int w = 0; w <= j; w++)
+                for (int w = j + 1; w < end; w++)
                 {
                     if (nums[i] + nums[j] + nums[w] == 0)
                     {
-                        List<int> temp = new List<int>();
-                        temp.Add(nums[i]);
-                        temp.Add(nums[j]);
-                        temp.Add(nums[w]);
+                        List<int> temp = new List<int> { nums[i], nums[j], nums[w] }
                         result.Add(temp);
                     }
                 }
@@ -46,7 +43,7 @@ class ListComparer : IEqualityComparer<List<int>> // comparative class for List<
         // Step 2: hash = (17 * 31) + 1 = 528
         // Step 3: hash = (528 * 31) + 2 = 16370
         // Step 4: hash = (16370 * 31) + 3 = 507473
-        
+
         // Final hash = 507473
 
     }
