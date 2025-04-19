@@ -55,11 +55,11 @@ const removeDuplicates = function (array) {
 console.log(removeDuplicates([1, 1, 2]));
 console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));*/
 
-/*const removeDuplicates = function (array) {
+const removeDuplicates = function (array) {
   for (let i = 0; i < array.length - 1; i++) {
     const newArr = array.filter((el, i) => array.indexOf(el) === i);
     return newArr;
   }
 };
 console.log(removeDuplicates([1, 1, 2]));
-console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));*/
+console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
