@@ -1,6 +1,6 @@
 %use masm
 section .text
-    global jump_game ; int canJump(int* nums, int numsSize) 
+    global can_jump ; int can_jump(int* nums, int numsSize) 
 
 ; int max(int num1, int num2);
 max:
@@ -24,12 +24,12 @@ end_max_function:
 
 
 
-; int canJump(int* nums, int numsSize) 
+; int can_jump(int* nums, int numsSize) 
 %define nums rbp - 16
 %define nums_size rbp - 8
 %define max_reach rbp - 4
 
-jump_game:
+can_jump:
     push rbp
     mov rbp, rsp
     sub rsp, 16  
@@ -78,13 +78,13 @@ loop:
 failed:
     ; false
     mov eax, 0
-    jmp end_jump_game_function
+    jmp end_can_jump_function
 
 success:
     ; true
     mov eax, 1
 
-end_jump_game_function:
+end_can_jump_function:
     leave   
     ret
 
@@ -95,7 +95,7 @@ end_jump_game_function:
 ;     return (num1 >= num2) ? num1 : num2;
 ; }
 
-; bool canJump(int *nums, int numsSize)
+; bool can_jump(int *nums, int numsSize)
 ; {
 ;     int max_reach = 0;
 ;     for (int i = 0; i < numsSize; i++) 
