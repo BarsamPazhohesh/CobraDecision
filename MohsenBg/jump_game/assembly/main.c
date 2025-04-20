@@ -2,7 +2,7 @@
 #include <stdbool.h>
 
 // Declare the assembly function
-extern int jump_game(int *nums, int numsSize);
+extern int can_jump(int *nums, int numsSize);
 
 // Function to print the array
 void print_array(int *arr, int size) {
@@ -24,14 +24,14 @@ int main() {
     printf("===========================\n");
     printf("Test 1: Array ");
     print_array(nums1, size1);
-    printf("%s\n", jump_game(nums1, size1) ? "Can jump" : "Cannot jump");
+    printf("%s\n", can_jump(nums1, size1) ? "Can jump" : "Cannot jump");
     printf("===========================\n");
 
     // Print and test nums2
     printf("\n===========================\n");
     printf("Test 2: Array ");
     print_array(nums2, size2);
-    printf("%s\n", jump_game(nums2, size2) ? "Can jump" : "Cannot jump");
+    printf("%s\n", can_jump(nums2, size2) ? "Can jump" : "Cannot jump");
     printf("===========================\n");
     
     return 0;
