@@ -203,5 +203,6 @@ after performing the matrix multiplication, the result will be:
 [F(5) F(4)]
 ```
 
-You can check the Rust code here:  
-#### [Rust Code](./rust/src/lib.rs) 📄💻
+You can check the code here:  
+- 🦀 [Rust Code — O(n log n)](./rust/src/lib.rs)  
+- ⚙️ [Assembly Code — O(n)](./asm/fibonacci.asm)
