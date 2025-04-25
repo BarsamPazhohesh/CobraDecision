@@ -19,3 +19,7 @@ function FiboCal(limiter: number): number[] {
   }
   return [];
 }
+
+FiboCal(8)?.forEach((e) => {
+  console.log(e);
+});
