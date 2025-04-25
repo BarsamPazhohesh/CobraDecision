@@ -9,6 +9,13 @@ function FiboCal(limiter: number): number[] {
     if (limiter == 2) {
       return returnNums;
     }
+
+    for (let i = 1; i < limiter - 1; i++) {
+      let temp = returnNums[i] + returnNums[i - 1];
+
+      returnNums.push(temp);
+    }
+    return returnNums;
   }
   return [];
 }
