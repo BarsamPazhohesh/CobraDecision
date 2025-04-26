@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TypeScript",
+      "program": "/home/rezishon/storage/Project/CobraDecision/Rezishon/TypescriptProjs/TwoSum/TwoSum.js",
+      "outFiles": ["/home/rezishon/storage/Project/CobraDecision/Rezishon/TypescriptProjs/TwoSum/TwoSum.ts"],
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+      "attachSimplePort": 9229
+    }
+  ]
+}

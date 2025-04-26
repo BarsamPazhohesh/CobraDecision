@@ -4,9 +4,7 @@
  * (Start point)
  */
 function main() {
-    console.log(twoSum([2, 7, 11, 15], 9));
-    console.log(twoSum([3, 2, 4], 6));
-    console.log(twoSum([3, 3], 6));
+    console.log(twoSum([5, 25, 75], 100));
 }
 main();
 //#endregion
@@ -18,15 +16,23 @@ main();
  * @returns Array of numbers which are index of true numbers
  */
 function twoSum(nums, target) {
-    var result = [];
-    for (var i = 0; i < nums.length - 1; i++) {
-        for (var j = i + 1; j < nums.length; j++) {
-            if (Is_i_j_eq_target({ i: nums[i], j: nums[j], target: target })) {
-                result.push(i);
-                result.push(j);
-                return result;
-            }
+    var result = new Map();
+    var index = 0;
+    var num = nums[index];
+    for (var i = 1; i <= nums.length;) {
+        console.log("".concat(index, " - ").concat(i));
+        if (Is_i_j_eq_target({ i: num, j: nums[i], target: target })) {
+            console.log("in");
+            result.set(0, index + 1);
+            result.set(1, i + 1);
+            return Array.from(result.values());
         }
+        if (i === nums.length) {
+            index++;
+            num = nums[index];
+            i = index;
+        }
+        i++;
     }
     return [];
 }
