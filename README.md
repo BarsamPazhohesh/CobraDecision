@@ -19,3 +19,4 @@ Each participant has their own branch and folder to solve questions and share th
 4. **Question 4**: [Two Sum II - Input Array is Sorted](./Questions/TwoSumII_InputArrayIsSorted.md)
 5. **Question 5**: [Sequence Compressor](./Questions/SequenceCompressor.md)
 6. **Question 6**: [Fibonacci Number](./Questions/FibonacciNumber.md)
+7. **Question 7**: [String to Integer (atoi)](./Questions/StringToInteger.md)
