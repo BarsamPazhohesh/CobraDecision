@@ -9,4 +9,4 @@ This is a collection of the questions I've solved. You can check how I solve the
 * [two_sum_sorted](./two_sum_sorted/README.md) ➕  
 * [sequence_compressor](./sequence_compressor/README.md) 🗜️  
 * [fibonacci_number](./fibonacci_number/README.md) 🧵  
-* [string_to_integer_atoi] (./string_to_integer_atoi/README.md)
+* [string_to_integer_atoi](./string_to_integer_atoi/README.md)
