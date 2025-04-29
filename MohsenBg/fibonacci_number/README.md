@@ -204,5 +204,5 @@ after performing the matrix multiplication, the result will be:
 ```
 
 You can check the code here:  
-- 🦀 [Rust Code — O(n log n)](./rust/src/lib.rs)  
-- ⚙️ [Assembly Code — O(n)](./asm/fibonacci.asm)
+- 🦀 [Rust Code — O(log n)](./rust/src/lib.rs)  
+- ⚙️ [Assembly Code — O(n)](./assembly/fibonacci.asm)
